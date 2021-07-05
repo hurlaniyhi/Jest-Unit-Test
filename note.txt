@@ -1,0 +1,24 @@
+USING JEST FOR UNIT TESTING
+------------------------------------------------------------
+
+- create a node project using npm init --yes
+- Install jest using npm install jest --save-dev
+- replace the value of the test key in package.json to jest
+- create a file called function.js(any name) ... this is where you will have all functions you want to test
+- create a file called function.test.js(anyname.test.js) ...this is where you will write your test
+
+
+TO CHECK FRO TRUTHY AND FALSY VALUES
+---------------------------------------------------
+- toBeNull matches only null 
+- toBeUndefined matches only undefined
+- toBeDefined is the opposite of toBeUndefined
+- toBeTruthy matches anything that an if statement treats as true
+- toBeFalsy matches anything that an if statement treats as false
+
+
+note: 
+- Test Suites means the number of test files we have
+- If you want the test to be running automatically as you are developing(typing), add "testwatch" (anyname) key the 
+to the scripts object in the package.json and give it a value of "jest --watchAll" i.e "testwatch": "jest --watchAll".
+then use "npm run testwatch" to run the test instead of "npm test"
